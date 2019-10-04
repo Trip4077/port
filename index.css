@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    background-color: #2b4162;
+    background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+    
+    color: white;
+}
+
+nav {
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+
+    height: 50px;
+    width: 14vw;
+
+    z-index: 1000000;
+}
+
+.social {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 30px;
+    color: white;
+}
+
+.social a:visited {
+    cursor: pointer;
+    color: white;
+}
+
+.introduction {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.name {
+    position: absolute;
+    top: 25px;
+    right: 5%;
+
+    font-size: 68px;
+
+    max-width: 525px;
+}
+
+.interests {
+    position: absolute;
+    bottom: 100px;
+    left: 5%;
+
+    font-size: 36px;
+    line-height: 60px;
+
+    max-width: 500px;
+}
+
+.introduction img {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1000000;
+}
+
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 56px;
+    margin: 70px 0;
+}
+
+.subtitle {
+    font-size: 48px;
+    margin: 20px 0;
+    margin-left: 40px;
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    box-sizing: border-box;
+
+    width: 47%;
+    margin-bottom: 45px;
+    padding: 20px;
+
+    position: relative;
+}
+
+.project h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+.project h3 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.project img {
+    height: 320px;
+    width: 100%;
+    z-index: -100;
+}
+
+.project span {
+    position: absolute;
+    z-index: 1000;
+
+    bottom: 95px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    font-size: 18px;
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 7px 15px;
+
+    cursor: pointer;
+}
+
+.stack {
+    height: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    transition: height .5s;
+}
+
+.stack li {
+    opacity: 0;
+    margin: 10px 15px;
+
+    transition: opacity .5s;
+}
+
+.stack.display {
+    height: 120px;
+}
+
+.stack.display li {
+    opacity: 1;
+}
+
+.btns {
+    display: flex;
+
+    letter-spacing: 3px;
+    font-size: 18px;
+
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.btns a {
+    background-color: #1352b1;
+    color: white;
+    padding: 8px 40px;
+
+    text-decoration: none;
+}
+
+
+.overlay {
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.85);
+
+    color: white;
+    font-size: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 30px;
+  }
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin: 30px 25px;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #434343 0%, #000000 74%);
+    padding: 10px;
+
+    box-shadow: 0 0 13px 6px rgba(255, 255, 255, 0.75);
+}
+
+.skill img {
+    height: 250px;
+    width:250px;
+}
