@@ -207,8 +207,8 @@ section {
     position: absolute;
     z-index: 1000;
 
-    bottom: 95px;
-    left: 50%;
+    top: 108px;
+    right: -45px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 
@@ -224,20 +224,23 @@ section {
 .stack {
     height: 0;
     display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-wrap: wrap;
 
     transition: height .5s;
+    margin-top: 20px;
 }
 
 .stack li {
     opacity: 0;
-    margin: 10px 15px;
+    margin: 0 15px;
 
     transition: opacity .5s;
 }
 
 .stack.display {
-    height: 120px;
+    height: 100px;
 }
 
 .stack.display li {
