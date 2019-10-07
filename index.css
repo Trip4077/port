@@ -64,6 +64,12 @@ nav {
     z-index: 1000000;
 }
 
+@media(max-width: 535px) {
+    nav {
+        width: 100vw;
+    }
+}
+
 .social {
     height: 100%;
     display: flex;
@@ -85,10 +91,23 @@ nav {
     height: 100vh;
 }
 
+.overlay-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+
+    height: 100vh;
+    width: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .name {
     position: absolute;
     top: 25px;
     right: 5%;
+    z-index: 90000;
 
     font-size: 68px;
 
@@ -99,11 +118,24 @@ nav {
     position: absolute;
     bottom: 100px;
     left: 5%;
+    z-index: 90000;
 
     font-size: 36px;
     line-height: 60px;
 
     max-width: 500px;
+}
+
+@media(max-width: 535px) {
+    .name {
+        font-size: 46px;
+        top: 65px;
+    }
+
+    .interests {
+        font-size: 24px;
+        bottom: 75px;
+    }
 }
 
 .introduction img {
@@ -128,6 +160,16 @@ section {
     font-size: 48px;
     margin: 20px 0;
     margin-left: 40px;
+}
+
+@media (max-width: 535px) {
+    .title {
+        font-size: 38px;
+    }
+
+    .subtitle {
+        font-size: 26px;
+    }
 }
 
 .columns {
@@ -220,6 +262,28 @@ section {
     text-decoration: none;
 }
 
+@media(max-width: 535px) {
+    .columns {
+        flex-direction: column;
+    }
+    
+    .project {
+        width: 100%;
+    }
+
+    #stack-btn {
+        display: none;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    .btns a {
+        text-align: center;
+        margin: 15px 0;
+    }
+}
 
 .overlay {
     box-sizing: border-box;
@@ -278,6 +342,16 @@ section {
     width:250px;
 }
 
+@media(max-width: 525px) {
+    .skill {
+        font-size: 26px;
+    }
+
+    .skill img {
+        height: 125px;
+        width: 125px;
+    }
+}
 
 .banner {
     width: 100;
@@ -301,6 +375,12 @@ section {
 
     font-size: 48px;
     text-align: center;
+}
+
+@media(max-width: 535px) {
+    .banner-text {
+        font-size: 28px;
+    }
 }
 
 .overlay-shade {
@@ -356,6 +436,31 @@ section {
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 3px;
+}
+
+@media(max-width: 535px) {
+    #review-section {
+        padding: 10px;
+    }
+
+    .reivews {
+        width: 100%;
+    }
+
+    .review-card {
+        max-width: 90%;
+        font-size: 16px;
+
+        line-height: 25px;
+    }
+
+    .review-card p {
+        margin: 10px 0;
+    }
+
+    .review-card p:last-of-type {
+        font-size: 18px;
+    }
 }
 
 #mail {
