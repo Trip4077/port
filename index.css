@@ -59,7 +59,7 @@ nav {
     background-color: rgba(0,0,0,0.5);
 
     height: 50px;
-    width: 14vw;
+    width: 100vw;
 
     z-index: 1000000;
 }
@@ -105,7 +105,7 @@ nav {
 
 .name {
     position: absolute;
-    top: 25px;
+    top: 120px;
     right: 5%;
     z-index: 90000;
 
@@ -129,7 +129,7 @@ nav {
 @media(max-width: 535px) {
     .name {
         font-size: 46px;
-        top: 65px;
+        top: 150px;
     }
 
     .interests {
@@ -514,20 +514,17 @@ section {
     display: flex;
     justify-content: center;
     text-decoration: none;
-    width: 100%;
 }
 
 .cus-btn {
     box-sizing: border-box;
 
-    height: 70px;
-    width: 100%;
     max-width: 350px;
 
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 15px 25px;
 
-    background-color: #04619fbb;
+    background-color: transparent;
 
     font-size: 24px;
     color: white;
@@ -546,7 +543,6 @@ section {
     cursor: pointer;
   }
   .container-block::before {
-    background-color: rgba(0, 0, 0, 0.3);
     bottom: 0;
     content: '';
     display: block;
