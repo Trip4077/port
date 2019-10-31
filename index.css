@@ -385,8 +385,8 @@ section {
 }
 
 .skill img {
-    height: 250px;
-    width:250px;
+    height: 175px;
+    width: 175px;
 }
 
 @media(max-width: 525px) {
@@ -454,16 +454,18 @@ section {
 	justify-content: space-around;
 	align-items: center;
     flex-wrap: wrap;
+
+
 }
 
 .review-card {
 	box-sizing: border-box;
 
-	max-width: 350px;
+	max-width: 400px;
 	width: 100%;
 
 	padding: 35px;
-	margin: 50px 0;
+	margin: 30px 0;
 
 	display: flex;
 	flex-direction: column;
@@ -479,10 +481,16 @@ section {
     background-image: linear-gradient(147deg, #000000 0%, #04619fbb 95%);
 }
 
+.review-card span {
+    font-style: italic;
+    margin: 0 auto;
+}
+
 .review-card p:last-of-type {
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 3px;
+    text-align: center;
 }
 
 @media(max-width: 535px) {
