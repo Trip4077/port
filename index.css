@@ -134,7 +134,7 @@ nav {
 @media(max-width: 535px) {
     .name {
         font-size: 46px;
-        top: 175px;
+        top: 150px;
         left: 50%;
         transform: translateX(-50%);
 
