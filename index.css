@@ -106,7 +106,7 @@ nav {
 .name {
     position: absolute;
     top: 120px;
-    right: 5%;
+    right: 12%;
     z-index: 90000;
 
     font-size: 68px;
@@ -122,7 +122,7 @@ nav {
 .interests {
     position: absolute;
     bottom: 100px;
-    left: 5%;
+    left: 15%;
     z-index: 90000;
 
     font-size: 36px;
@@ -147,6 +147,7 @@ nav {
     }
 
     .interests {
+        left: 5%;
         font-size: 24px;
         bottom: 175px;
     }
