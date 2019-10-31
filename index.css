@@ -100,7 +100,7 @@ nav {
     height: 100vh;
     width: 100%;
     
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .name {
@@ -112,6 +112,11 @@ nav {
     font-size: 68px;
 
     max-width: 525px;
+}
+
+.name h3 {
+    font-size: 42px;
+    margin-top: 35px;
 }
 
 .interests {
@@ -129,12 +134,21 @@ nav {
 @media(max-width: 535px) {
     .name {
         font-size: 46px;
-        top: 150px;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .name h3 {
+        font-size: 32px;
     }
 
     .interests {
         font-size: 24px;
-        bottom: 75px;
+        bottom: 200px;
     }
 }
 
