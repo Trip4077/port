@@ -134,7 +134,7 @@ nav {
 @media(max-width: 535px) {
     .name {
         font-size: 46px;
-        top: 200px;
+        top: 175px;
         left: 50%;
         transform: translateX(-50%);
 
@@ -148,7 +148,7 @@ nav {
 
     .interests {
         font-size: 24px;
-        bottom: 200px;
+        bottom: 175px;
     }
 }
 
