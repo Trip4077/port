@@ -1,6 +1,7 @@
+// Project Tech Stack Logic
+
 const moreInfoArr = document.querySelectorAll('.project span');
 const projects = document.querySelectorAll('.project');
-console.log(projects[1].children)
 
 for(let i = 0; i < moreInfoArr.length; i++) {
     moreInfoArr[i].addEventListener('click', () => {
@@ -8,7 +9,21 @@ for(let i = 0; i < moreInfoArr.length; i++) {
     });
 }
 
+// Typing Animation - Header
+
 const typed = new Typed('#typed', {
     stringsElement: '#typed-strings',
     typeSpeed: 25
 });
+
+// Skills Accordian
+
+const skillHeaders = document.querySelectorAll('.subtitle');
+const skillRows = document.querySelectorAll('.skills-row');
+
+for(let i = 0; i < skillHeaders.length; i++) {
+    skillHeaders[i].addEventListener('click', () => {
+        skillRows[i].classList.toggle('display');
+    });
+}
+console.log(skillRows)
