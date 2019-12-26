@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#si {
+    box-sizing: border-box;
+    left: 10px;
+}
+
+#overlay {
+    top: 0;
+    left: 0;
+}
+
+#bc {
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+@media(max-width: 750px) {
+    #bc {
+        margin-top: 0px;
+        margin-left: 50px;
+    } 
+}
