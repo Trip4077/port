@@ -32,3 +32,7 @@ html {
         margin-left: 50px;
     } 
 }
+
+p b #bold {
+    color: #2c6ee6;
+}
